@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/evmizulin/validator#readme",
   "dependencies": {
+    "clone": "^2.1.1",
     "tv4": "^1.3.0"
   },
   "devDependencies": {
