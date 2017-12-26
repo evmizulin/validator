@@ -29,7 +29,7 @@ module.exports = function (opt) {
         code: CODES[item.code],
         dataPath: dataPath,
         schemaPath: schemaPath,
-        message: schemaPath.reduce(function (res, item) {
+        message: !schemaPath.length ? message : schemaPath.reduce(function (res, item) {
           if (res === message) return message;
           return res[item] || message;
         }, messages || {})
